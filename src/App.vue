@@ -1,7 +1,16 @@
 <script setup>
 import {ref} from "vue";
+const count = ref(0) ;
 
-const count = ref(0);
+const addCount = () => {
+  console.log("hello from addcount")
+  count.value = count.value + 1;
+
+}
+const subtractCount = () => {
+  console.log("hello from subtrackcount")
+  count.value = count.value - 1;
+}
 
 </script>
 
